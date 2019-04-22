@@ -1,11 +1,19 @@
-<b>Things I now that I didn't know yesterday:</b><br>
+<b>Things I now know that I didn't know yesterday:</b><br>
 <i>This is an exercise in honesty.  A lot of these things are very basic.  Some of them I "knew" but I didn't truly KNOW them until something didn't work as expected.</i><br> 
-<br><br><br>
+<br><br>
 19 Apr 19<br>
 - You can see a list of IPs for every VM through the vsphere fat client but not through the web interface.<br>
-- The virtual machine manamagnent console should not be used for daily tasks.  Just get things set up and then SSH in.<br>
+- The virtual machine management console should not be used for daily tasks.  Just get things set up and then SSH in.<br>
 <br>
 22 Apr 19<br>
 - Debian doesn't have a lot of programs installed by default:  sudo, net-tools, dig, curl, ssh server (forgot to check the box)<br>
 - If you enable FDE on a VM and expect to be able to SSH in after reboot (without accessing vsphere first) you're going to have a bad time.<br>
 - I don't remember HTML.  Pagebreaks everywhere!<br>
+- If you replace your domain's established DNS with your recently-created DNS, you won't be able to connect to your domain any longer.<br>
+- 'set' displays the current environment variable settings in Windows.<br>
+
+<br><br><br>
+<b>Things I don't know now but will try to learn tomorrow:</b><br>
+- I changed my computer's setting earlier to use my new DNS (pi-hole) instead of my domain's established DNS.  An hour later I tried logging into the domain and it failed.  Luckily it didn't take me long to figure out that the DNS must somehow be involved in the process of logging into the domain.  I was able to log into the box as local admin, change the DNS server back, and log back in.  However, when I switched the DNS server back again later (to try and recreate the issue for a coworker), it still let me log in to the domain.  Turns out something about the DNS was cached.  I flushed the DNS on my machine and recreated the problem.  What I would like to know: How long are DNS settings cached for?  What do I need to change in my new DNS server to allow access to the domain?<br>
+- What is 'origin master' in 'git push -u origin master'?<br>
+
